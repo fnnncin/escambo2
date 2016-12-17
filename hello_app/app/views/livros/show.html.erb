@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Titulo:</strong>
+  <%= @livro.titulo %>
+</p>
+
+<p>
+  <strong>Autor:</strong>
+  <%= @livro.autor %>
+</p>
+
+<p>
+  <strong>Genero:</strong>
+  <%= @livro.genero %>
+</p>
+
+<p>
+  <strong>Editora:</strong>
+  <%= @livro.editora %>
+</p>
+
+<p>
+  <strong>Dono:</strong>
+  <%= @livro.dono %>
+</p>
+
+<p>
+  <strong>Telefone:</strong>
+  <%= @livro.telefone %>
+</p>
+
+<%= link_to 'Edit', edit_livro_path(@livro) %> |
+<%= link_to 'Back', livros_path %>
