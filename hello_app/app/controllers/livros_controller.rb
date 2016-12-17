@@ -1,6 +1,6 @@
 class LivrosController < ApplicationController
   before_action :set_livro, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_user!, except: [:index]
   # GET /livros
   # GET /livros.json
   def index
